@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>barmharhonghok ♡</title>
+
+<style>
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  margin: 0;
+
+  padding: 15px 15px 100px;
+
+  background: linear-gradient(135deg,#fceaf1,#e6f3e9);
+
+  font-family: Arial, sans-serif;
+
+  color: #425b4a;
+
+}
+
+.container {
+
+  max-width: 700px;
+
+  margin: auto;
+
+}
+
+header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px 5px 25px;
+
+}
+
+.logo {
+
+  font-family: Georgia,serif;
+
+  font-size: 27px;
+
+  font-weight: bold;
+
+  color: #54755e;
+
+}
+
+a {
+
+  text-decoration: none;
+
+}
+
+.facebook {
+
+  background: #f7dce8;
+
+  color: #a45e7d;
+
+  padding: 10px 15px;
+
+  border-radius: 30px;
+
+  font-size: 13px;
+
+}
+
+.hero {
+
+  background: #fffafa;
+
+  border-radius: 25px;
+
+  padding: 30px 22px;
+
+  border: 1px solid #e8dce1;
+
+  margin-bottom: 18px;
+
+}
+
+.hero h1 {
+
+  font-family: Georgia,serif;
+
+  font-size: 43px;
+
+  color: #64866d;
+
+  margin: 15px 0;
+
+}
+
+.hero p {
+
+  line-height: 1.8;
+
+  color: #78877d;
+
+}
+
+.section {
+
+  background: white;
+
+  border-radius: 23px;
+
+  padding: 23px;
+
+  margin-bottom: 18px;
+
+  border: 1px solid #dce9df;
+
+}
+
+.section h2 {
+
+  color: #63836b;
+
+  font-family: Georgia,serif;
+
+}
+
+.small {
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  color: #89968d;
+
+}
+
+.page {
+
+  display: none;
+
+}
+
+.page.active {
+
+  display: block;
+
+}
+
+input {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: 1px solid #d9e5dc;
+
+  border-radius: 13px;
+
+  margin: 7px 0 15px;
+
+  font-size: 14px;
+
+  background: #fffdfd;
+
+}
+
+label {
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+}
+
+button {
+
+  cursor: pointer;
+
+  border: none;
+
+  border-radius: 13px;
+
+  padding: 12px 18px;
+
+  font-weight: bold;
+
+}
+
+.save {
+
+  background: #dceee1;
+
+  color: #52745b;
+
+}
+
+.qr {
+
+  border: 2px dashed #c6ddcb;
+
+  border-radius: 18px;
+
+  min-height: 230px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 15px;
+
+  margin: 15px 0;
+
+  text-align: center;
+
+}
+
+.qr img {
+
+  max-width: 100%;
+
+  max-height: 300px;
+
+}
+
+.tabs {
+
+  position: fixed;
+
+  bottom: 12px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: calc(100% - 25px);
+
+  max-width: 700px;
+
+  display: flex;
+
+  background: white;
+
+  padding: 8px;
+
+  border-radius: 22px;
+
+  box-shadow: 0 5px 25px #a5b9aa55;
+
+  gap: 5px;
+
+}
+
+.tab {
+
+  flex: 1;
+
+  background: transparent;
+
+  color: #819387;
+
+}
+
+.tab.active {
+
+  background: #dceee1;
+
+  color: #4f765b;
+
+}
+
+.review {
+
+  text-align: center;
+
+  padding: 35px 10px;
+
+  border: 1px dashed #d9e5dc;
+
+  border-radius: 18px;
+
+}
+
+footer {
+
+  text-align: center;
+
+  font-size: 12px;
+
+  color: #9aa99e;
+
+  padding: 15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+  <div class="logo">barmharhonghok ♡</div>
+
+  <a class="facebook"
+
+     href="https://www.facebook.com/weethida.palmy?"
+
+     target="_blank">
+
+     Facebook ↗
+
+  </a>
+
+</header>
+
+<!-- MAIN PAGE -->
+
+<div class="page active" id="main">
+
+  <div class="hero">
+
+    <p>WELCOME TO</p>
+
+    <h1>barmharhonghok ♡</h1>
+
+    <p>
+
+      สวัสดีลูกค้าทุกคนนะคะ ♡<br>
+
+      ยินดีต้อนรับเข้าสู่ร้านของเรา
+
+      ขอบคุณที่แวะมาอุดหนุนค่ะ
+
+    </p>
+
+  </div>
+
+  <div class="section">
+
+    <h2>♡ welcome</h2>
+
+    <p class="small">
+
+      ร้าน barmharhonghok ยินดีให้บริการ
+
+      สามารถติดต่อสอบถามรายละเอียดเพิ่มเติม
+
+      ผ่านทาง Facebook ของร้านได้เลยค่ะ
+
+    </p>
+
+  </div>
+
+  <div class="section">
+
+    <h2>✿ Contact us</h2>
+
+    <a class="facebook"
+
+       href="https://www.facebook.com/weethida.palmy?"
+
+       target="_blank">
+
+       ติดต่อร้านค้า ↗
+
+    </a>
+
+  </div>
+
+</div>
+
+<!-- REVIEWS PAGE -->
+
+<div class="page" id="reviews">
+
+  <div class="section">
+
+    <p class="small">KIND WORDS ♡</p>
+
+    <h2>Reviews ♡</h2>
+
+    <div class="review">
+
+      <h3>♡</h3>
+
+      <p class="small">
+
+        ยังไม่มีรีวิวในขณะนี้<br>
+
+        ขอบคุณลูกค้าทุกคนที่สนับสนุนร้านค่ะ
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- PAYMENT PAGE -->
+
+<div class="page" id="payment">
+
+  <div class="section">
+
+    <p class="small">SAFE PAYMENT ♡</p>
+
+    <h2>ชำระเงิน</h2>
+
+    <p class="small">
+
+      กรุณาตรวจสอบชื่อบัญชีและเลขบัญชีก่อนโอนเงินทุกครั้ง
+
+    </p>
+
+    <label>ชื่อธนาคาร</label>
+
+    <input id="bank" placeholder="กรอกชื่อธนาคาร">
+
+    <label>ชื่อบัญชี</label>
+
+    <input id="owner" placeholder="กรอกชื่อเจ้าของบัญชี">
+
+    <label>เลขบัญชี</label>
+
+    <input id="number" placeholder="กรอกเลขบัญชี">
+
+    <button class="save" onclick="saveAccount()">
+
+      บันทึกข้อมูล ♡
+
+    </button>
+
+    <p class="small" id="status"></p>
+
+  </div>
+
+  <div class="section">
+
+    <h2>QR Code ♡</h2>
+
+    <div class="qr" id="qr">
+
+      <p class="small">เพิ่มรูป QR Code ของร้านที่นี่</p>
+
+    </div>
+
+    <label>อัปโหลดรูป QR Code</label>
+
+    <input type="file"
+
+           id="qrFile"
+
+           accept="image/*">
+
+    <p class="small">
+
+      เลือกรูป QR Code จากอุปกรณ์ของคุณ
+
+    </p>
+
+  </div>
+
+</div>
+
+<footer>
+
+  Made with love ♡ barmharhonghok
+
+</footer>
+
+</div>
+
+<!-- BOTTOM NAVIGATION -->
+
+<nav class="tabs">
+
+  <button class="tab active"
+
+          onclick="changePage('main',this)">
+
+    ✿ Main
+
+  </button>
+
+  <button class="tab"
+
+          onclick="changePage('reviews',this)">
+
+    ♡ Reviews
+
+  </button>
+
+  <button class="tab"
+
+          onclick="changePage('payment',this)">
+
+    ▱ Payment
+
+  </button>
+
+</nav>
+
+<script>
+
+function changePage(page,button) {
+
+  document.querySelectorAll('.page')
+
+    .forEach(p => p.classList.remove('active'));
+
+  document.getElementById(page)
+
+    .classList.add('active');
+
+  document.querySelectorAll('.tab')
+
+    .forEach(t => t.classList.remove('active'));
+
+  button.classList.add('active');
+
+  window.scrollTo(0,0);
+
+}
+
+// บันทึกข้อมูลบัญชี
+
+function saveAccount() {
+
+  const data = {
+
+    bank: document.getElementById('bank').value,
+
+    owner: document.getElementById('owner').value,
+
+    number: document.getElementById('number').value
+
+  };
+
+  localStorage.setItem(
+
+    'shopAccount',
+
+    JSON.stringify(data)
+
+  );
+
+  document.getElementById('status').innerText =
+
+    'บันทึกข้อมูลเรียบร้อยแล้ว ♡';
+
+}
+
+// โหลดข้อมูลบัญชีเดิม
+
+const saved = JSON.parse(
+
+  localStorage.getItem('shopAccount') || 'null'
+
+);
+
+if(saved) {
+
+  document.getElementById('bank').value = saved.bank || '';
+
+  document.getElementById('owner').value = saved.owner || '';
+
+  document.getElementById('number').value = saved.number || '';
+
+}
+
+// อัปโหลด QR Code
+
+document.getElementById('qrFile')
+
+.addEventListener('change', function(e) {
+
+  const file = e.target.files[0];
+
+  if(!file) return;
+
+  const reader = new FileReader();
+
+  reader.onload = function(event) {
+
+    const img = document.createElement('img');
+
+    img.src = event.target.result;
+
+    img.alt = 'QR Code';
+
+    const qr = document.getElementById('qr');
+
+    qr.innerHTML = '';
+
+    qr.appendChild(img);
+
+  };
+
+  reader.readAsDataURL(file);
+
+});
+
+</script>
+
+</body>
+
+</html>
